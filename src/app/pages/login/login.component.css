@@ -1,0 +1,97 @@
+/* Declare variables */
+:root {
+    --main-color: rgb(218, 210, 210);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  /* body styling */
+  body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    background-color: blueviolet;
+    color: var(--main-color);
+  }
+  /* container styling */
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  /* input styling */
+  #form button[type="sign in"],
+  #form input[type="email"],
+  #form input[type="password"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  }
+  #form input[type="email"],
+  #form input[type="password"] {
+    width: 100%;
+    border: 1px solid var(--main-color);
+    background: rgb(237, 234, 234);
+    margin: 0 0 5px;
+    padding: 10px;
+    outline: none;
+  }
+  #form button[type="sign in"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: var(rgb(79, 35, 151));
+    color: rgb(16, 15, 15);
+    margin: 0 0 5px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+  /* form styling */
+  #form {
+    padding: 25px;
+    margin: 150px 0;
+    border-radius: 10px;
+  }
+  #form h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  /* fieldset styling */
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  /* attribution styling */
+  .copyright {
+    text-align: center;
+  }
+  .copyright a {
+    color: rgb(57, 17, 220);
+    background-color: rgb(57, 17, 220) ;
+    padding: 4px;
+    text-transform: capitalize;
+  }
+  
+  /* Declare variables */
+:root {
+    --main-color: black;
+  }
+
+.right{
+  background-color:aliceblue;
+}
+.img{
+background-color: blue;
+}
+  
