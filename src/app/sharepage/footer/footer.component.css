@@ -3,7 +3,7 @@
     overflow: hidden;
     position: sticky;
     top: 100%;
-    background-color: rgb(28, 3, 60);
+    background-color: #1F2041;
     padding: 20px 20px;
     height: 160px;
 
@@ -12,6 +12,12 @@ h1
 {
     color: #fff;
     font-size: 50px;
+    margin-left: 70px;
+}
+h2{
+    color: #fff;
+    font-size: 10px;
+    margin-left: 70px;   
 }
 p
 {

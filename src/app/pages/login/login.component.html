@@ -1,34 +1,35 @@
 
 <!-- container -->
 <div class="container-fluid d-flex">
-    <div class = "col-sm-6">
-      <img src ="assets/img/wallet_im.png" class="col-sm-12 h-100">
+    <div class = " text-center; col-sm-6" style="background-color: #1f2041">
+      <img src ="assets/img/icon.png" class=" img col-sm-2 h-20">
     </div>
-    <div class="col-sm-6 bg-primary">
+    <div class="col-sm-6 bg-#F6ECEC">
       <!-- form -->
       <form id="form" action="" method="" >
         <!-- form heading -->
-        <h3>sign in</h3>
+        <h3>sign in</h3><br>
         <!-- form inputs -->
         <fieldset>
             <label for="email">Email address:</label>
-            <input type="email" name="email" id="email" required>
+            <br>
+            <input type="email"name="email" id="email" required>
         </fieldset>
+        <br>
         <fieldset>
-            <label for="password">Password:</label>
+            <label  for="password">Password:</label>
+            <br>
             <input type="password" name="password" id="password" required>
         </fieldset>
+        <br>
         <fieldset>
-          <button name="submit" type="sign in" id="sign in">signin</button>
+          <button name="submit" type="sign in" id="sign in">Sign in</button>
         </fieldset>
+        <br>
         <!-- attribution -->
-        <p class="copyright style=color:blue">
-          Don't have an account already?
-        </p>
-        <a class="nav-link " routerLink="/register">Register</a>
+        <a class="register" routerLink="/register" routerLinkActive="active-link">Don't have an account yet? </a>
       </form>
     </div>
-  
 </div>
  
 
