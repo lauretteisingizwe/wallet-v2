@@ -4,7 +4,7 @@
   </div>
   <div class="col-sm-6 bg-#1f2041">
     <!-- form -->
-    <form id="form" action="" method="">
+    <form id="form" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
       <!-- form heading -->
       <h2 style="margin-left: 70px">Create account</h2>
       <br>
@@ -14,32 +14,34 @@
       <fieldset>
         <label for="Email address">Email address:</label>
         <br />
-        <input type="email" name="Email address" id="Email address" required />
+        <input type="email" name="email" id="Email address" required ngModel />
       </fieldset>
       <fieldset>
         <label for="Last Name">Last name:</label>
         <br />
-        <input type="text" name="Last Name" id="Last Name" required />
+        <input type="text" name="lastName" id="Last Name" required ngModel />
       </fieldset>
       <fieldset>
         <label for="First Name">First name:</label>
         <br />
 
-        <input type="text" name="First Name" id="First Name" required />
+        <input type="text" name="firstName" id="First Name" (ngModel)="firstName" required ngModel />
         <br />
         <fieldset>
           <label for="phone number">phone number:</label>
           <br />
-          <input type="number" name="phone number" id="phone number" required />
+          <input type="number" name="phoneNumber" id="phone number" required ngModel/>
           <br />
           <fieldset>
             <label for="password">password:</label>
             <br />
-            <input type="password" name="password" id="password" required />
+            <input type="password" name="password" id="password" required ngModel />
             <br />
             <fieldset>
               <br />
-              <button name="submit" type="button" id="create account">
+              <h1 *ngFor="let user of users">{{user.name}}</h1>
+              <br/>
+              <button name="submit" type="submit" id="create account" >
                 create account
               </button>
             </fieldset>
