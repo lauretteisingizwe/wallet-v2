@@ -13,6 +13,10 @@ import { RegisterComponent } from './pages/login/register/register.component';
 import { HeaderComponent } from './sharepage/header/header.component';
 import { BodyComponent } from './sharepage/body/body.component';
 
+import {HttpClientModule} from "@angular/common/http";
+import { FormsModule } from '@angular/forms';
+import { enableProdMode } from '@angular/core'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +32,13 @@ import { BodyComponent } from './sharepage/body/body.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule 
+    
   ],
   providers: [],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
