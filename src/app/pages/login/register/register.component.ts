@@ -22,17 +22,11 @@ export class RegisterComponent implements OnInit {
   users:any;
   firstName! : string;
 
-  ngOnInit(): void {
-    this.register = new FormGroup({
-      "firstName": new FormControl(null),
-      "lastName": new FormControl(null), 
-      "email": new FormControl(null),
-      "mobileNumber": new FormControl(null),
-      "Password": new FormControl(null),
-    });
-    
-    this.getUsers();
+  ngOnInit(){ 
+    this.userService.getUsers();
+  
   }
+  
 
   // When we submit user create form
   onSubmit(form: NgForm) {
@@ -51,10 +45,13 @@ export class RegisterComponent implements OnInit {
      
 
     
- //getUsers(this){
- //this.getuserService.getUsers().subscribe((data: any) => {
- //this.users = data;
- //});
+ //getUsers(){
+ //this.Service.getUsers().subscribe((response) => {
+ //console.log(res)
+ //}, (error) =>{
+  console.log('Error', Error);
+   
+ 
 // }
-        
-  
+      
+ 

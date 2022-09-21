@@ -20,33 +20,22 @@ const httpOptions = {
 
 // This is a service to get and manage user data 
 export class UserService {
-  private apiUrl = "http://localhost:3000/users";
+  getUsers() {
+    throw new Error('Method not implemented.');
+  }
+  private apiUrl = "http://localhost:3000/users.json";
 
   constructor(private http: HttpClient) { }
-
-  // TODO: Implement Create user services
-  /// this.http.post(this.apiUrl,data, httpOptions)
-       // onSubmit(users {id: int, email: varchar, lastname: varchar, firstname, phonenumber: varchar, password: varchar})
-      //this.http.post(this."http://localhost:3000/users.json", users)
-         //subscribe((res: any) =>{
-         // console.log(res)
-         }; 
-        //catchError(this.handleError('adduser', UserService)
-      //);
-  //}
-       // this.UserService
-       // .adduser
-        //.subscribe(() => this.users.push(user));
-  // TODO: Authentication
-  // TODO: Get Logged in user data.
-  
-  // Get All Users / Search user by phonenumber
-  // getUsers(): number[]{
-  //   return [1, 2, 3, 4, 5];
-  // }
-
-  //getUsers(): Observable<any>{
-    // this.http.get(this."http://localhost:3000/users");
+};
+//getUsers(): Observable<any>{
+  //return this.http.get<any>(`this.http://localhost:5000/getUsers`);
  // }
 //}
 
+  // TODO: Implement Create user services
+   //this.http.post(this.apiUrl,data, httpOptions)
+      
+    // return this.http.post(this."http://localhost:5000/users.json", httpOptions)
+       //  subscribe((res: any) =>{
+        //console.log()
+    
