@@ -14,23 +14,24 @@
       <fieldset>
         <label for="Email address">Email address:</label>
         <br />
-        <input type="email" name="email" id="Email address" required ngModel />
+        <input type="email" name="email" id="Email" required ngModel />
       </fieldset>
+      
       <fieldset>
         <label for="Last Name">Last name:</label>
         <br />
-        <input type="text" name="lastName" id="Last Name" required ngModel />
+        <input type="text" name="lastname" id="Lastname" required ngModel />
       </fieldset>
       <fieldset>
         <label for="First Name">First name:</label>
         <br />
 
-        <input type="text" name="firstName" id="First Name" (ngModel)="firstName" required ngModel />
+        <input type="text" name="firstname" id="Firstname" (ngModel)="firstname" required ngModel />
         <br />
         <fieldset>
           <label for="phone number">phone number:</label>
           <br />
-          <input type="number" name="phoneNumber" id="phone number" required ngModel/>
+          <input type="number" name="phonenumber" id="phonenumber" required ngModel/>
           <br />
           <fieldset>
             <label for="password">password:</label>
@@ -39,7 +40,7 @@
             <br />
             <fieldset>
               <br />
-              <h1 *ngFor="let user of users">{{user.name}}</h1>
+              <h1 *ngFor="let user  users">{{user.name}}</h1>
               <br/>
               <button name="submit" type="submit" id="create account" >
                 create account

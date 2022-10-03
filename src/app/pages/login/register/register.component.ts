@@ -1,7 +1,9 @@
 import { getCurrencySymbol, getLocaleEraNames } from '@angular/common';
 import { ReturnStatement } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, NgForm} from '@angular/forms';
+import { FormControl, FormGroup, NgForm, NgModel} from '@angular/forms';
+import { response } from 'express';
+//import { ConsoleReporter } from 'jasmine';
 import { firstValueFrom } from 'rxjs';
 
 // Import user service
@@ -14,44 +16,56 @@ import { __values } from 'tslib';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  getUsers: any;
+  getUsers:  any;
+  Service: any;
+ngForm= NgForm ;  
+email= NgModel ; 
+firstname= NgModel;
+lastname= NgModel;
+phoenumber= NgModel;
+password= NgModel;
+users= NgModel;
 
-  constructor(private userService: UserService) { }
+  constructor(private user: UserService) { }
 
   register: any;//form
-  users:any;
+  //users:any;
   firstName! : string;
+  lastName! : string;
 
-  ngOnInit(){ 
-    this.userService.getUsers();
+
+  ngOnInit(): void{ 
   
+    this.Service.getUsers();
+     
   }
-  
-
-  // When we submit user create form
+   // When we submit user create form
   onSubmit(form: NgForm) {
     // So the form doesn't auto submit
   //$event.preventDefault();
     //console.log("Hello, We are sending our data to the API.");
-  // console.log("account created.");
+   console.log("account created.");
     
- // console.log("this.registration");
-
     //TODO: console.log() or alert all the data inputed in the fields. using NG Form
-    console.log(form.value)
-    }
-      }
+    console.log(form.value.password)
+    //this.registerUsers(form.value).subscribe((response: any) =>{
+    //Console.log("response",response);
+      //console.log(response.ValueForm)
+    //});
   
-     
-
     
+    }
+  registerUsers(value: any) {
+    //throw new Error('Method not implemented.');
+  }
+ //     }
  //getUsers(){
- //this.Service.getUsers().subscribe((response) => {
- //console.log(res)
+//this.Service.getUsers().subscribe((response: any) => {
+// console.log(res)
  //}, (error) =>{
-  console.log('Error', Error);
+ // console.log('Error', Error);
    
  
-// }
       
  
+}  

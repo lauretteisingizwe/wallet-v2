@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +15,8 @@ import { BodyComponent } from './sharepage/body/body.component';
 
 import {HttpClientModule} from "@angular/common/http";
 import { FormsModule } from '@angular/forms';
-import { enableProdMode } from '@angular/core'
+import { enableProdMode } from '@angular/core';
+import { DashboardComponent } from './pages/login/register/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,8 @@ import { enableProdMode } from '@angular/core'
     RegisterComponent,
     HeaderComponent,
     BodyComponent,
+    DashboardComponent,
+  
   ],
   imports: [
     BrowserModule,
