@@ -35,8 +35,12 @@ users= NgModel;
 
 
   ngOnInit(): void{ 
-  
-    this.Service.getUsers();
+    console.warn(this.register.Value)
+    this.Service.getUsers(this.register.Value).subscribe(()=> {
+      console.warn("result")
+
+    }
+      );
      
   }
    // When we submit user create form
@@ -47,7 +51,7 @@ users= NgModel;
    console.log("account created.");
     
     //TODO: console.log() or alert all the data inputed in the fields. using NG Form
-    console.log(form.value.password)
+    console.log(form.value)
     //this.registerUsers(form.value).subscribe((response: any) =>{
     //Console.log("response",response);
       //console.log(response.ValueForm)

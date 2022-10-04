@@ -7,9 +7,8 @@
     <form id="form" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
       <!-- form heading -->
       <h2 style="margin-left: 70px">Create account</h2>
+      <br>    
       <br>
-      <br>
-
       <!-- form inputs -->
       <fieldset>
         <label for="Email address">Email address:</label>
@@ -47,9 +46,7 @@
               </button>
             </fieldset>
             <!-- attribution -->
-            <a class="login-link" routerLink="/login"
-              >Have an account?.login</a
-            >
+            <a class="login-link" routerLink="/login" routerLinkActive="active-link">Have an account already?sign in </a>
           </fieldset>
         </fieldset>
       </fieldset>
