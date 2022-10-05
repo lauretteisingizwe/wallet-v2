@@ -40,7 +40,7 @@
             <br />
             <fieldset>
               <br />
-              <h1 *ngFor="let user  users">{{user.name}}</h1>
+              <h1 *ngFor="let user of users">{{user.lastname + " " + user.firstname}}</h1>
               <br/>
               <button name="submit" type="submit" id="create account" >
                 create account

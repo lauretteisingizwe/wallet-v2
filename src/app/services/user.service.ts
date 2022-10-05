@@ -7,37 +7,31 @@ import { response } from 'express';
 //const axios = require('axios');
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type': 'application/json'
-  })
+    'Content-Type': 'application/json',
+  }),
 };
-const formData = new FormData()
+const formData = new FormData();
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-// This is a service to get and manage user data 
+// This is a service to get and manage user data
 export class UserService {
-  
-   // throw new Error('Method not implemented.');
- // }
-  private apiUrl = "http://localhost:3300/users";
-  rooturl= "http://localhost:3300/users";
-  rootUrl: any;
-  Url: any;
- constructor(private http: HttpClient) { }
- getUsers() {
-  return this.http.get(this.rooturl);
- }
- deleteUsers() {
-  return this.http.delete('${this.url}/${id}')
- }
-addUsers(){
-  return this.http.post(this.Url.data, null)
+
+  private apiUrl = 'http://localhost:3300/';
+
+  constructor(private http: HttpClient) {}
+
+  getUsers() {
+    return this.http.get(this.apiUrl + 'users');
+  }
+
+  deleteUsers(id: any) {
+    return this.http.delete(`${this.apiUrl}/${id}`);
+  }
+  addUsers(data: any) {
+    return this.http.post(this.apiUrl + 'users', data);
+  }
+  registerUser(data: any) {
+    return this.http.post(this.apiUrl + 'users', data);
+  }
 }
-registerUser(data: any){
-  return this.http.post(this.apiUrl+"users",data);
-}
-}
-
-
-
-
