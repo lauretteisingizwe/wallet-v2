@@ -37,7 +37,7 @@ users= NgModel;
   ngOnInit(): void{ 
     console.warn(this.register.Value)
     this.Service.getUsers(this.register.Value).subscribe(()=> {
-      console.warn("result")
+      console.log("result")
 
     }
       );
