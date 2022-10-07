@@ -47,24 +47,23 @@ label{
   margin-left: 125px;
 }
 
-#form button[type="button"] {
- 
-    cursor: pointer;
-    width: 50%;
-    height: 10%;
-    border: none;
-    background: #1f2041;
-    color: white;
-    margin-left: 125px;
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 15px;
+#form button[type="create account"] {
+  cursor: pointer;
+  width: 50%;
+  border: none;
+  background: #1f2041;
+  color: white;
+  margin-left: 125px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: capitalize;
 }
 
 #form h2 {
   font-size: 20px;
   font-weight: 30;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-left: 100px;
   
   

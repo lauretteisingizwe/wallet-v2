@@ -18,10 +18,12 @@
       </fieldset>
       
       <fieldset>
+        <br />
         <label for="Last Name">Last name:</label>
         <br />
         <input type="text" name="lastname" id="Lastname" required ngModel />
       </fieldset>
+      <br />
       <fieldset>
         <label for="First Name">First name:</label>
         <br />
@@ -29,9 +31,11 @@
         <input type="text" name="firstname" id="Firstname" (ngModel)="firstname" required ngModel />
         <br />
         <fieldset>
+          <br />
           <label for="phone number">phone number:</label>
           <br />
           <input type="number" name="phonenumber" id="phonenumber" required ngModel/>
+          <br />
           <br />
           <fieldset>
             <label for="password">password:</label>
@@ -41,10 +45,7 @@
             <fieldset>
               <br />
               <h1 *ngFor="let user of users">{{user.lastname + " " + user.firstname}}</h1>
-              <br/>
-              <button name="submit" type="submit" id="create account" >
-                create account
-              </button>
+             <button name="submit" type="create account" id="sign in">create account</button>
             </fieldset>
             <!-- attribution -->
             <a class="login-link" routerLink="/login" routerLinkActive="active-link">Have an account already?sign in </a>

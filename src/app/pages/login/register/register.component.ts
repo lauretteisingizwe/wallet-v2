@@ -28,7 +28,6 @@ export class RegisterComponent implements OnInit {
   constructor(private userService: UserService) {}
 
   register: any; //form
-  //users:any;
   firstName!: string;
   lastName!: string;
 
