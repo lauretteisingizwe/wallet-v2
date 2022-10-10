@@ -17,6 +17,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { FormsModule } from '@angular/forms';
 import { enableProdMode } from '@angular/core';
 import { DashboardComponent } from './pages/login/register/dashboard/dashboard.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { DashboardComponent } from './pages/login/register/dashboard/dashboard.c
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule 
+    FormsModule,
+    BrowserAnimationsModule 
     
   ],
   providers: [],
