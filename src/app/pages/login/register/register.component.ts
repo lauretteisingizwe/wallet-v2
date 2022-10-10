@@ -23,6 +23,7 @@ export class RegisterComponent implements OnInit {
   lastname = NgModel;
   phoenumber = NgModel;
   password = NgModel;
+  delete = NgModel; 
   users: any;
 
   constructor(private userService: UserService) {}
@@ -50,10 +51,16 @@ export class RegisterComponent implements OnInit {
   }
 
   getUsers(){
-    this.userService.getUsers().subscribe((data) => {
+    this.userService.getUsers().subscribe((data) => {   
       this.users = data;
       console.log('result');
     });
   }
 
+  deleteUsers(id: any){
+    this.userService.deleteUsers(id).subscribe((data) => {
+      this.users = data;
+      console.log('result');
+    });
+  }
 }

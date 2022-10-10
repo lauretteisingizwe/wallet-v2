@@ -47,6 +47,10 @@
               <h1 *ngFor="let user of users">{{user.lastname + " " + user.firstname}}</h1>
              <button name="submit" type="create account" id="sign in">create account</button>
             </fieldset>
+            <br/>
+            <fieldset>
+              <button name="delete" type="delete" id="delete">delete</button>
+            </fieldset>
             <!-- attribution -->
             <a class="login-link" routerLink="/login" routerLinkActive="active-link">Have an account already?sign in </a>
           </fieldset>
